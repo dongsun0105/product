@@ -1,0 +1,36 @@
+app:
+  name: product
+  description: "product"
+  character-Encoding: utf8
+  use-unicode: true
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /console
+  datasource:
+    url: jdbc:h2:~/test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.format_sql: true
+  sql:
+    init:
+      mode: always
