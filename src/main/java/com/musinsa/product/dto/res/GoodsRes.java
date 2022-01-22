@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 public class GoodsRes {
-    private Long goodsNo;
+    private Integer goodsNo;
     private String goodsNm;
     private String goodsCont;
     private String comId;

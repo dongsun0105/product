@@ -11,23 +11,23 @@ import java.time.LocalDateTime;
 @Entity
 @SequenceGenerator(
         name = "GOODS_SEQ_GENERATOR",
-        sequenceName = "GOOD_SEQ",
+        sequenceName = "GOODS_SEQ",
         allocationSize = 1)
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Goods {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "GOODS_SEQ_GENERATOR")
-    private Long goodsNo;
+    private Integer goodsNo;
     private String goodsNm;
+    @Lob
     private String goodsCont;
     private String comId;
     private LocalDateTime regDm;
     private LocalDateTime updDm;
 
     @Builder
-    public Goods(Long goodsNo, String goodsNm, String goodsCont, String comId) {
-        this.goodsNo = goodsNo;
+    public Goods(String goodsNm, String goodsCont, String comId) {
         this.goodsNm = goodsNm;
         this.goodsCont = goodsCont;
         this.comId = comId;
