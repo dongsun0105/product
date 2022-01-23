@@ -3,6 +3,7 @@ app:
   description: "product"
   character-Encoding: utf8
   use-unicode: true
+  rate-limit: 1
 server:
   port: 8080
   error:

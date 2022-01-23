@@ -2,7 +2,8 @@ package com.musinsa.product.exception;
 
 public enum ExceptionCode {
 
-    PRD001("Product ID is invalid.");
+    PRD001("Product ID is invalid."),
+    PRD002("Request block by rate limiter.");
 
     private String code;
     private String message;

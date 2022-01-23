@@ -1,4 +1,4 @@
-package com.musinsa.product.config.advice;
+package com.musinsa.product.advice;
 
 import com.musinsa.product.dto.common.CommonResponseBody;
 import com.musinsa.product.exception.GoodsException;

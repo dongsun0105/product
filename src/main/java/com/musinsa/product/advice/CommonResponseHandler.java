@@ -1,4 +1,4 @@
-package com.musinsa.product.config.advice;
+package com.musinsa.product.advice;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
