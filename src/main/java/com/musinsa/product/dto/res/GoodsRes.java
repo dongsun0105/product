@@ -1,6 +1,8 @@
 package com.musinsa.product.dto.res;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.musinsa.product.entity.Goods;
+import com.musinsa.product.serializer.LocalDateTimeSerializer;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,7 +15,9 @@ public class GoodsRes {
     private String goodsNm;
     private String goodsCont;
     private String comId;
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
     private LocalDateTime regDm;
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
     private LocalDateTime updDm;
 
     public GoodsRes(Goods goods) {

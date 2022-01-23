@@ -2,7 +2,7 @@ package com.musinsa.product.exception;
 
 public enum ExceptionCode {
 
-    ERR001("Product ID is invalid.");
+    PRD001("Product ID is invalid.");
 
     private String code;
     private String message;
