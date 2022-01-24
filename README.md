@@ -2,7 +2,7 @@
 - 상품 조회/등록 REST API 구현
 - REST API 버저닝 고려 : URI Versioning
 - 쓰로틀링 오류 처리 고려 : Guava RateLimiter 활용
-- Repository 타입 변경 고려 : JpaRepoistory 인터페이스 활용
+- Repository 타입 변경 고려 : JpaRepository 인터페이스 활용
 
 ## Environment
 - JAVA 11
